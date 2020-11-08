@@ -1,0 +1,4 @@
+Neste repośitorio estão os códigos de Sidney.
+O calcularhash, faz o cálculo das somas hash de arquivos, comparando-as e mostrando se está tudo ok.
+Neste momento somente faz calculo e mostra hash de 256bits, sha256.
+
