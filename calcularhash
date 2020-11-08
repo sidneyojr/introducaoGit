@@ -1,0 +1,19 @@
+#!/bin/bash
+cd /home/sidney/Downloads
+pwd
+ls
+echo "Colocar a hash do arquivo"
+read codigo;
+echo "Colocoque o nome do arquivo"
+read arquivo;
+hash1=$(echo "$codigo  $arquivo")
+echo "$hash1"
+hash2=`sha256sum "$arquivo"`
+echo "$hash2"
+test -n "$hash1"; echo $?
+test -n "$hash2"; echo $?
+if [ "$hash1" = "$hash2" ]; then
+echo "SUCESSO"
+else
+ echo "FRACASSO"
+fi
