@@ -1,10 +1,11 @@
 #!/bin/bash
-cd /home/sidney/Downloads
+# Abre o diretório Downloads do usuário
+cd /home/$USER/Downloads
 pwd
 ls
 echo "Colocar a hash do arquivo"
 read codigo;
-echo "Colocoque o nome do arquivo"
+echo "Coloque o nome do arquivo"
 read arquivo;
 hash1=$(echo "$codigo  $arquivo")
 echo "$hash1"
@@ -17,3 +18,4 @@ echo "SUCESSO"
 else
  echo "FRACASSO"
 fi
+#Os comentários foram iniciados neste código em 08/11/2020, foram também corrigidos erros de gráfia
